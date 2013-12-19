@@ -10,8 +10,6 @@
 #include <stdlib.h>
 #include"AdjList.h"
 
-
-
 Graph initGraph(Graph G, int nNodes){
 
     G.node_list = (Node**)malloc(nNodes*sizeof(Node*));
@@ -19,8 +17,7 @@ Graph initGraph(Graph G, int nNodes){
     for(int i = 0; i < nNodes; i++){
         G.node_list[i] = initNode(i);
     }
-    
-    
+
     G.nNodes = nNodes;
     return G;    
 }
@@ -30,9 +27,7 @@ Node* initNode(int node_id){
     Node* buf = (Node*)malloc(sizeof(Node));
     
     buf->node_id = node_id;
-    
     buf->node_value = -1;
-    
     buf->nextNode = NULL;
     
     return buf;
@@ -101,24 +96,19 @@ int deleteEdge(Graph G, int n1, int n2){
     
     if(!isAdjacent(G, n1, n2))
         return -1;
-    
-    
-    
+
     cur = G.node_list[n1];
     
     
     while(cur->node_id!= n2){
-        
-        
+    
         prev = cur;
         cur = cur->nextNode; 
     
     }
     
     prev->nextNode = cur->nextNode;
-    
-    
-    
+
     cur = G.node_list[n2];
     while(cur->node_id!= n1){
         
