@@ -151,6 +151,9 @@ int isAdjacent(Graph G, int n1, int n2){
 
 int* getNeighbours(Graph G, int n1 , int* buf){
     
+    // buf pointer to an array of integers.
+    // Assume that buf is of sufficient size.
+    
     Node* cur = NULL;
  
     int count = 0;
