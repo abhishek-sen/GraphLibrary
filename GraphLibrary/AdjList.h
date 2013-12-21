@@ -46,7 +46,8 @@ int insertEdge(Graph, int, int, float);
 
 int deleteEdge(Graph, int, int);
 
-int isAdjacent(Graph, int, int);
+Node* isAdjacent(Graph, int, int);
+
 
 int* getNeighbours(Graph, int ,int*);
 

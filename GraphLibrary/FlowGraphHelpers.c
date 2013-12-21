@@ -56,6 +56,42 @@ int setNodeCapacity(Graph G, int n, int cap){
     return 1;
 }
 
+int setEdgeFlow(Graph G, int n1, int n2, int flow){
+    
+    Node* cur = isAdjacent(G, n1, n2);
+    if(cur==NULL)
+        return 0;
+
+    if(cur->maxEdgeCapacity < flow)
+        return 0;
+        
+    cur->currEdgeCapacity = cur->maxEdgeCapacity - flow;
+        
+    return 1;
+
+}
+
+
+int incrementEdgeFlow(Graph G, int n1, int n2){
+    
+    Node* cur = isAdjacent(G, n1, n2);
+    
+    if(cur == NULL)
+        return 0;
+    
+    if(cur->currEdgeCapacity <= 0)
+        return 0;
+    
+   
+        
+    cur->currEdgeCapacity = cur->maxEdgeCapacity - 1;
+        
+        
+    return 1;
+}
+
+
+
 
 
 

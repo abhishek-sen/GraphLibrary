@@ -140,7 +140,13 @@ int deleteEdge(Graph G, int n1, int n2){
     
 }
 
-int isAdjacent(Graph G, int n1, int n2){
+/* 
+ 
+ If Edge is found return the pointer to the node.
+ Otherwise return NULL
+ 
+ */
+Node* isAdjacent(Graph G, int n1, int n2){
     
     Node* cur = NULL;
 
@@ -148,11 +154,11 @@ int isAdjacent(Graph G, int n1, int n2){
     
     while(cur->nextNode!=NULL){
         if(cur->nextNode->node_id == n2)
-            return 1;
+            return cur->nextNode;
         cur = cur->nextNode;
     }
     
-    return 0;
+    return NULL;
    
 }
 

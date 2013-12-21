@@ -23,4 +23,8 @@ int setEdgeCapacity(Graph, int, int);
 
 int setNodeCapacity(Graph, int, int);
 
+int setEdgeFlow(Graph, int, int, int);
+
+int incrementEdgeFlow(Graph, int, int);
+
 #endif
