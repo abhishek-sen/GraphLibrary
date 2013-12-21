@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E06E7E691865386B00F3B146 /* FlowGraphHelpers.c in Sources */ = {isa = PBXBuildFile; fileRef = E06E7E681865386B00F3B146 /* FlowGraphHelpers.c */; };
 		E0E6541518638F4B00D5448B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E0E6541418638F4B00D5448B /* main.c */; };
 		E0E6541718638F4B00D5448B /* GraphLibrary.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E0E6541618638F4B00D5448B /* GraphLibrary.1 */; };
 		E0E6541E18638F5B00D5448B /* AdjList.c in Sources */ = {isa = PBXBuildFile; fileRef = E0E6541D18638F5B00D5448B /* AdjList.c */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E06E7E681865386B00F3B146 /* FlowGraphHelpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FlowGraphHelpers.c; sourceTree = "<group>"; };
+		E06E7E6B1865389100F3B146 /* FlowGraphHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowGraphHelpers.h; sourceTree = "<group>"; };
 		E0E6541018638F4B00D5448B /* GraphLibrary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GraphLibrary; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E6541418638F4B00D5448B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E0E6541618638F4B00D5448B /* GraphLibrary.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = GraphLibrary.1; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				E0E6541618638F4B00D5448B /* GraphLibrary.1 */,
 				E0E6541D18638F5B00D5448B /* AdjList.c */,
 				E0E6541F18638F6A00D5448B /* AdjList.h */,
+				E06E7E681865386B00F3B146 /* FlowGraphHelpers.c */,
+				E06E7E6B1865389100F3B146 /* FlowGraphHelpers.h */,
 			);
 			path = GraphLibrary;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			files = (
 				E0E6541518638F4B00D5448B /* main.c in Sources */,
 				E0E6541E18638F5B00D5448B /* AdjList.c in Sources */,
+				E06E7E691865386B00F3B146 /* FlowGraphHelpers.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +218,7 @@
 				E0E6541C18638F4B00D5448B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
