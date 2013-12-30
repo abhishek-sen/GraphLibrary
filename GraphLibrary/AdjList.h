@@ -18,7 +18,7 @@ typedef struct node{
     
     // generalization for flow Graph
     int maxEdgeCapacity;
-    int currEdgeCapacity;
+    int currEdgeFlow;
     int maxNodeCapacity;
     int currNodeCapacity;
     int isSource;
@@ -36,13 +36,22 @@ typedef struct graph{
     
 }Graph;
 
+typedef struct path_struct{
+    
+    int nNodes;
+    int success;
+    int* node_list;
+    
+}GraphPath;
+
+
 Graph initGraph(Graph, int, int, int);
 
 void printGraph(Graph);
 
 Node* initNode(int, int);
 
-int insertEdge(Graph, int, int, float);
+Node* insertEdge(Graph, int, int, float);
 
 int deleteEdge(Graph, int, int);
 
@@ -55,6 +64,7 @@ int getNodeValue(Graph, int);
 
 int setNodeValue(Graph, int, int);
 
+Graph cloneGraph(Graph);
 
 
 

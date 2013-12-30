@@ -11,20 +11,29 @@
 
 #include "AdjList.h"
 
+
+Graph constructResidualGraph(Graph);
+
 int setSource(Graph, int);
 
 int setSink(Graph, int);
 
-int setMaxEdgeCapacity(Graph, int, int);
+int setMaxEdgeCapacity(Graph, int, int, int);
 
 int setMaxNodeCapacity(Graph, int, int);
 
-int setEdgeCapacity(Graph, int, int);
+int setEdgeCapacity(Graph, int, int, int);
 
 int setNodeCapacity(Graph, int, int);
 
-int setEdgeFlow(Graph, int, int, int);
+int incrementEdgeFlow(Graph, int, int, int);
 
-int incrementEdgeFlow(Graph, int, int);
+
+
+int getPathCapacity(Graph, GraphPath);
+
+int displayPath(Graph, GraphPath* );
+
+int computeFlow(Graph, int);
 
 #endif

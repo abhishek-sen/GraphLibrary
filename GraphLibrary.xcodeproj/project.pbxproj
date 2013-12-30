@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E00289B5186A8F8A00E40619 /* GraphTraversalAlgorithms.c in Sources */ = {isa = PBXBuildFile; fileRef = E00289B4186A8F8A00E40619 /* GraphTraversalAlgorithms.c */; };
+		E00289B9186AACF700E40619 /* Flow_FordFulkerson.c in Sources */ = {isa = PBXBuildFile; fileRef = E00289B8186AACF700E40619 /* Flow_FordFulkerson.c */; };
 		E06E7E691865386B00F3B146 /* FlowGraphHelpers.c in Sources */ = {isa = PBXBuildFile; fileRef = E06E7E681865386B00F3B146 /* FlowGraphHelpers.c */; };
 		E0E6541518638F4B00D5448B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E0E6541418638F4B00D5448B /* main.c */; };
 		E0E6541718638F4B00D5448B /* GraphLibrary.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E0E6541618638F4B00D5448B /* GraphLibrary.1 */; };
@@ -27,6 +29,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E00289B4186A8F8A00E40619 /* GraphTraversalAlgorithms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GraphTraversalAlgorithms.c; sourceTree = "<group>"; };
+		E00289B7186A8FB100E40619 /* GraphTraversalAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphTraversalAlgorithms.h; sourceTree = "<group>"; };
+		E00289B8186AACF700E40619 /* Flow_FordFulkerson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Flow_FordFulkerson.c; sourceTree = "<group>"; };
+		E066CB8A186E8BB7004E2E2E /* FlowAlgos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowAlgos.h; sourceTree = "<group>"; };
 		E06E7E681865386B00F3B146 /* FlowGraphHelpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FlowGraphHelpers.c; sourceTree = "<group>"; };
 		E06E7E6B1865389100F3B146 /* FlowGraphHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowGraphHelpers.h; sourceTree = "<group>"; };
 		E0E6541018638F4B00D5448B /* GraphLibrary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GraphLibrary; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,12 +72,16 @@
 		E0E6541318638F4B00D5448B /* GraphLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				E00289B4186A8F8A00E40619 /* GraphTraversalAlgorithms.c */,
+				E00289B7186A8FB100E40619 /* GraphTraversalAlgorithms.h */,
 				E0E6541418638F4B00D5448B /* main.c */,
 				E0E6541618638F4B00D5448B /* GraphLibrary.1 */,
 				E0E6541D18638F5B00D5448B /* AdjList.c */,
 				E0E6541F18638F6A00D5448B /* AdjList.h */,
 				E06E7E681865386B00F3B146 /* FlowGraphHelpers.c */,
 				E06E7E6B1865389100F3B146 /* FlowGraphHelpers.h */,
+				E00289B8186AACF700E40619 /* Flow_FordFulkerson.c */,
+				E066CB8A186E8BB7004E2E2E /* FlowAlgos.h */,
 			);
 			path = GraphLibrary;
 			sourceTree = "<group>";
@@ -130,6 +140,8 @@
 				E0E6541518638F4B00D5448B /* main.c in Sources */,
 				E0E6541E18638F5B00D5448B /* AdjList.c in Sources */,
 				E06E7E691865386B00F3B146 /* FlowGraphHelpers.c in Sources */,
+				E00289B5186A8F8A00E40619 /* GraphTraversalAlgorithms.c in Sources */,
+				E00289B9186AACF700E40619 /* Flow_FordFulkerson.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
